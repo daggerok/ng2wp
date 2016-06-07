@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import {Routes, ROUTER_DIRECTIVES, OnActivate, RouteSegment, RouteTree} from '@angular/router';
+import { Routes, ROUTER_DIRECTIVES } from '@angular/router';
 
 import { ApiService } from './shared';
 import { HomeComponent } from './home';
@@ -21,17 +21,12 @@ import '../style/app.scss';
   template: ``, styles: [``] */
 })
 @Routes([
-  {path: '/', component: HomeComponent}, // add :some to fix rout issue
+  {path: '/', component: HomeComponent},
   {path: '/About', component: AboutComponent}
 ])
-export class AppComponent implements OnActivate {
+export class AppComponent {
 
   url = 'https://github.com/daggerok/ng2wp';
-
-  public routerOnActivate(curr: RouteSegment,
-                          prev?: RouteSegment,
-                          currTree?: RouteTree,
-                          prevTree?: RouteTree): void {}
 
   constructor(private api: ApiService) {}
 }

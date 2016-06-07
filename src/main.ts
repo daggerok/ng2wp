@@ -8,7 +8,7 @@ import {AppComponent} from './app/app.component';
 enableProdMode();
 
 bootstrap(AppComponent, [
-  ...HTTP_PROVIDERS,
-  ...ROUTER_PROVIDERS
+  HTTP_PROVIDERS,
+  ROUTER_PROVIDERS
 ])
 .catch(err => console.error(err));

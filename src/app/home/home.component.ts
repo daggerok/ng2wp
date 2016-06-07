@@ -2,26 +2,19 @@ import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'ng2wp-home',
-  template: `
-<p>
-  Home Works!
-</p>
-`,
+  template: `<p>Home page</p>`,
   styles: [`
-/* // cscc component styles are encapsulated and only applied to their components */
-* {
-  color: #FFEF00;
-}
-`]
+    /* // cscc component styles are encapsulated and only applied to their components */
+    * {
+      color: #FFEF00;
+    }
+  `]
 })
 export class HomeComponent implements OnInit {
 
-  constructor() {
-    // Do stuff
-  }
+  constructor() {}
 
-  ngOnInit() {
-    console.log('Hello Home');
+  public ngOnInit() {
+    console.log('ng2wp');
   }
-
 }

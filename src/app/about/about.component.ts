@@ -2,13 +2,16 @@ import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'ng2wp-about',
-  template: require('./about.component.html'),
-  styles: [require('./about.component.scss')]
+  template: `<p>About page</p>`,
+  styles: [`
+    * {
+      color: #f87c08;
+    }
+  `]
 })
 export class AboutComponent implements OnInit {
+
   constructor() {}
 
-  ngOnInit() {
-    console.log('Hello About');
-  }
+  public ngOnInit() {}
 }

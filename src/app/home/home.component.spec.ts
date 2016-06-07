@@ -19,6 +19,6 @@ describe('Home', () => {
     expect(console.log).not.toHaveBeenCalled();
 
     home.ngOnInit();
-    expect(console.log).toHaveBeenCalledWith('Hello Home');
+    expect(console.log).toHaveBeenCalledWith('ng2wp');
   }));
 });

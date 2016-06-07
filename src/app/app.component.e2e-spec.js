@@ -17,10 +17,10 @@ describe('ng2wp', function () {
   });
 
   it('should have a main title', function () {
-    expect(element(by.css('main .title')).getText()).toEqual('Hello from Angular 2!');
+    expect(element(by.css('main .title')).getText()).toEqual('ng2!');
   });
 
   it('should have <footer>', function () {
-    expect(element(by.css('ng2wp-app footer')).getText()).toEqual("Webpack Angular 2 Starter");
+    expect(element(by.css('ng2wp-app footer')).getText()).toEqual("ng2wp starter");
   });
 });

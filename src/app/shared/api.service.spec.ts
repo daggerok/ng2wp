@@ -13,6 +13,6 @@ describe('Api Service', () => {
   beforeEachProviders(() => [ApiService]);
 
   it('should ...', inject([ApiService], (api: ApiService) => {
-    expect(api.title).toBe('Angular 2');
+    expect(api.title).toBe('ng2');
   }));
 });

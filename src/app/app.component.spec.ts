@@ -14,12 +14,14 @@ import { ApiService } from './shared';
 import { AppComponent } from './app.component';
 
 describe('ng2wp-app', () => {
+  
   // provide our implementations or mocks to the dependency injector
   beforeEachProviders(() => [
     AppComponent,
     ApiService,
     BaseRequestOptions,
     MockBackend,
+    
     // Provide a mocked (fake) backend for Http
     provide(Http, {
       useFactory: function useFactory(backend, defaultOptions) {

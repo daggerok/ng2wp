@@ -1,5 +1,5 @@
-ng2wp (angular 2 webpack) [![build](https://travis-ci.org/daggerok/ng2wp.svg?branch=master)](https://travis-ci.org/daggerok/ng2wp)
-=========================
+fork: ng2wp (angular 2 webpack) [![build](https://travis-ci.org/daggerok/ng2wp.svg?branch=master)](https://travis-ci.org/daggerok/ng2wp)
+===============================
 
 ```bash
 git clone --depth=1 --branch=master https://github.com/daggerok/ng2wp.git ng2wp

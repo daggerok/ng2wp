@@ -5,8 +5,7 @@ node_js: 6
 cache:
   directories:
     - node_modules
-install:
-  - true
+install: true
 before_install:
   - export CHROME_BIN=chromium-browser
   - export DISPLAY=:99.0
@@ -14,7 +13,6 @@ before_install:
 script:
   - npm i
   - npm test
-#  - npm run e2e
   - npm run dev
   - npm run build
 notifications:
